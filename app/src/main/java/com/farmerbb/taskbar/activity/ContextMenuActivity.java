@@ -138,25 +138,25 @@ public class ContextMenuActivity extends PreferenceActivity implements Preferenc
             switch(TaskbarPosition.getTaskbarPosition(this)) {
                 case POSITION_BOTTOM_LEFT:
                 case POSITION_BOTTOM_VERTICAL_LEFT:
-                    params.gravity = Gravity.BOTTOM | Gravity.LEFT;
+                    params.gravity = Gravity.BOTTOM | Gravity.CENTER;
                     params.x = x;
                     params.y = display.height - y - offset;
                     break;
                 case POSITION_BOTTOM_RIGHT:
                 case POSITION_BOTTOM_VERTICAL_RIGHT:
-                    params.gravity = Gravity.BOTTOM | Gravity.LEFT;
+                    params.gravity = Gravity.BOTTOM | Gravity.CENTER;
                     params.x = x - contextMenuWidth + offset + offset;
                     params.y = display.height - y - offset;
                     break;
                 case POSITION_TOP_LEFT:
                 case POSITION_TOP_VERTICAL_LEFT:
-                    params.gravity = Gravity.TOP | Gravity.LEFT;
+                    params.gravity = Gravity.TOP | Gravity.CENTER;
                     params.x = x;
                     params.y = y - offset + statusBarHeight;
                     break;
                 case POSITION_TOP_RIGHT:
                 case POSITION_TOP_VERTICAL_RIGHT:
-                    params.gravity = Gravity.TOP | Gravity.LEFT;
+                    params.gravity = Gravity.TOP | Gravity.CENTER;
                     params.x = x - contextMenuWidth + offset + offset;
                     params.y = y - offset + statusBarHeight;
                     break;
