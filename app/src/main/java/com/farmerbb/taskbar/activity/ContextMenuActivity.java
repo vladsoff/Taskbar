@@ -130,8 +130,8 @@ public class ContextMenuActivity extends PreferenceActivity implements Preferenc
         int contextMenuWidth = getResources().getDimensionPixelSize(R.dimen.tb_context_menu_width);
 
         if(showStartMenu || desktopIcon != null) {
-            int x = args.getInt("x", 0);
-            int y = args.getInt("y", 0);
+            int x = args.getInt("x", 10);
+            int y = args.getInt("y", 10);
             int offsetResourceId = isOverflowMenu ? R.dimen.tb_context_menu_offset_overflow : R.dimen.tb_context_menu_offset;
             int offset = getResources().getDimensionPixelSize(offsetResourceId);
 
@@ -171,13 +171,13 @@ public class ContextMenuActivity extends PreferenceActivity implements Preferenc
             switch(TaskbarPosition.getTaskbarPosition(this)) {
                 case POSITION_BOTTOM_LEFT:
                     params.gravity = Gravity.BOTTOM | Gravity.CENTER;
-                    params.x = isStartButton ? 0 : x;
+                    params.x = isStartButton ? 10 : x;
                     params.y = offset;
                     break;
                 case POSITION_BOTTOM_VERTICAL_LEFT:
                     params.gravity = Gravity.BOTTOM | Gravity.CENTER;
                     params.x = offset;
-                    params.y = display.height - y - (isStartButton ? 0 : offset);
+                    params.y = display.height - y - (isStartButton ? 10 : offset);
                     break;
                 case POSITION_BOTTOM_RIGHT:
                     params.gravity = Gravity.BOTTOM | Gravity.CENTER;
@@ -187,27 +187,27 @@ public class ContextMenuActivity extends PreferenceActivity implements Preferenc
                 case POSITION_BOTTOM_VERTICAL_RIGHT:
                     params.gravity = Gravity.BOTTOM | Gravity.CENTER;
                     params.x = offset;
-                    params.y = display.height - y - (isStartButton ? 0 : offset);
+                    params.y = display.height - y - (isStartButton ? 10 : offset);
                     break;
                 case POSITION_TOP_LEFT:
                     params.gravity = Gravity.TOP | Gravity.CENTER;
-                    params.x = isStartButton ? 0 : x;
+                    params.x = isStartButton ? 10 : x;
                     params.y = offset;
                     break;
                 case POSITION_TOP_VERTICAL_LEFT:
                     params.gravity = Gravity.TOP | Gravity.CENTER;
                     params.x = offset;
-                    params.y = isStartButton ? 0 : y - statusBarHeight;
+                    params.y = isStartButton ? 10 : y - statusBarHeight;
                     break;
                 case POSITION_TOP_RIGHT:
-                    params.gravity = Gravity.TOP | Gravity.CENTER;
+                    params.gravity = Gravity.CENTER | Gravity.CENTER;
                     params.x = display.width - x;
                     params.y = offset;
                     break;
                 case POSITION_TOP_VERTICAL_RIGHT:
-                    params.gravity = Gravity.TOP | Gravity.CENTER;
+                    params.gravity = Gravity.CENTER | Gravity.CENTER;
                     params.x = offset;
-                    params.y = isStartButton ? 0 : y - statusBarHeight;
+                    params.y = isStartButton ? 10 : y - statusBarHeight;
                     break;
             }
 
