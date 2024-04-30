@@ -25,5 +25,5 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
           name: app
-          path: app/src/app-debug.apk
+          path:  target/site/Taskbar/app-debug.apk
 
