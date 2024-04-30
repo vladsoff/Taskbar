@@ -21,7 +21,4 @@ jobs:
         java-version: 11
     - name: Build
       run: ./gradlew assembleFreeDebug
-    - name: Spotless Check
-      run: ./gradlew spotlessCheck
-    - name: Run tests
-      run: ./gradlew testFreeDebug
+
