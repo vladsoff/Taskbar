@@ -170,42 +170,42 @@ public class ContextMenuActivity extends PreferenceActivity implements Preferenc
 
             switch(TaskbarPosition.getTaskbarPosition(this)) {
                 case POSITION_BOTTOM_LEFT:
-                    params.gravity = Gravity.BOTTOM | Gravity.LEFT;
+                    params.gravity = Gravity.BOTTOM | Gravity.CENTER;
                     params.x = isStartButton ? 0 : x;
                     params.y = offset;
                     break;
                 case POSITION_BOTTOM_VERTICAL_LEFT:
-                    params.gravity = Gravity.BOTTOM | Gravity.LEFT;
+                    params.gravity = Gravity.BOTTOM | Gravity.CENTER;
                     params.x = offset;
                     params.y = display.height - y - (isStartButton ? 0 : offset);
                     break;
                 case POSITION_BOTTOM_RIGHT:
-                    params.gravity = Gravity.BOTTOM | Gravity.RIGHT;
+                    params.gravity = Gravity.BOTTOM | Gravity.CENTER;
                     params.x = display.width - x;
                     params.y = offset;
                     break;
                 case POSITION_BOTTOM_VERTICAL_RIGHT:
-                    params.gravity = Gravity.BOTTOM | Gravity.RIGHT;
+                    params.gravity = Gravity.BOTTOM | Gravity.CENTER;
                     params.x = offset;
                     params.y = display.height - y - (isStartButton ? 0 : offset);
                     break;
                 case POSITION_TOP_LEFT:
-                    params.gravity = Gravity.TOP | Gravity.LEFT;
+                    params.gravity = Gravity.TOP | Gravity.CENTER;
                     params.x = isStartButton ? 0 : x;
                     params.y = offset;
                     break;
                 case POSITION_TOP_VERTICAL_LEFT:
-                    params.gravity = Gravity.TOP | Gravity.LEFT;
+                    params.gravity = Gravity.TOP | Gravity.CENTER;
                     params.x = offset;
                     params.y = isStartButton ? 0 : y - statusBarHeight;
                     break;
                 case POSITION_TOP_RIGHT:
-                    params.gravity = Gravity.TOP | Gravity.RIGHT;
+                    params.gravity = Gravity.TOP | Gravity.CENTER;
                     params.x = display.width - x;
                     params.y = offset;
                     break;
                 case POSITION_TOP_VERTICAL_RIGHT:
-                    params.gravity = Gravity.TOP | Gravity.RIGHT;
+                    params.gravity = Gravity.TOP | Gravity.CENTER;
                     params.x = offset;
                     params.y = isStartButton ? 0 : y - statusBarHeight;
                     break;
