@@ -398,23 +398,23 @@ public class TaskbarController extends UIController {
     @SuppressLint("RtlHardcoded")
     @VisibleForTesting
     int getTaskbarGravity(String taskbarPosition) {
-        int gravity = Gravity.BOTTOM | Gravity.LEFT;
+        int gravity = Gravity.BOTTOM | Gravity.CENTER;
         switch(taskbarPosition) {
             case POSITION_BOTTOM_LEFT:
             case POSITION_BOTTOM_VERTICAL_LEFT:
-                gravity = Gravity.BOTTOM | Gravity.LEFT;
+                gravity = Gravity.BOTTOM | Gravity.CENTER;
                 break;
             case POSITION_BOTTOM_RIGHT:
             case POSITION_BOTTOM_VERTICAL_RIGHT:
-                gravity = Gravity.BOTTOM | Gravity.RIGHT;
+                gravity = Gravity.BOTTOM | Gravity.CENTER;
                 break;
             case POSITION_TOP_LEFT:
             case POSITION_TOP_VERTICAL_LEFT:
-                gravity = Gravity.TOP | Gravity.LEFT;
+                gravity = Gravity.TOP | Gravity.CENTER;
                 break;
             case POSITION_TOP_RIGHT:
             case POSITION_TOP_VERTICAL_RIGHT:
-                gravity = Gravity.TOP | Gravity.RIGHT;
+                gravity = Gravity.TOP | Gravity.CENTER;
                 break;
         }
         return gravity;
