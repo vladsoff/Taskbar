@@ -17,7 +17,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+     android:layout_gravity="center_vertical">
 
     <LinearLayout android:layout_width="@dimen/tb_icon_size"
                   android:layout_height="24dp"
