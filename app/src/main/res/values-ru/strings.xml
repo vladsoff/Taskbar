@@ -119,8 +119,8 @@
     <string name="tb_error_dialog_title">Ошибка</string>
     <string name="tb_error_dialog_message">К сожалению, эту функцию нельзя включить на вашем устройстве.\n\nВы можете включить ее самостоятельно используя adb shell:\n\nappops set %1$s %2$s allow</string>
     <string name="tb_action_ok">OK</string>
-    <string name="tb_action_cancel">Отмена</string>
-
+    <string name="tb_action_cancel">He</string>
+    <string name="tb_action_activate">Да</string>
     <string name="tb_pin_app">Закрепить</string>
     <string name="tb_unpin_app">Открепить</string>
     <string name="tb_block_app">Не показывать в Недавних Приложениях</string>
@@ -342,8 +342,7 @@
 
     <string name="tb_pin_shortcut_not_supported">Your launcher doesn\'t support adding shortcuts from other apps.\n\nPlease manually add the shortcut from your launcher\'s \"Widgets\" menu.</string>
 
-    <string name="tb_action_activate">Activate</string>
-
+  
     <string name="tb_pref_secondscreen_title_open">Open SecondScreen</string>
     <string name="tb_pref_secondscreen_title_install">Install SecondScreen</string>
     <string name="tb_pref_secondscreen_description">Change your device\'s resolution and density when connected to an external display, for a Continuum or DeX-like experience</string>
