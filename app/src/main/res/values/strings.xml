@@ -119,7 +119,7 @@
     <string name="tb_error_dialog_title">Error</string>
     <string name="tb_error_dialog_message">Unfortunately, due to OEM restrictions, this feature can\'t be enabled on your device.\n\nYou may still be able to enable it by using this adb shell command:\n\nappops set %1$s %2$s allow</string>
     <string name="tb_action_ok">OK</string>
-    <string name="tb_action_cancel">Cancel</string>
+    <string name="tb_action_cancel">No</string>
 
     <string name="tb_pin_app">Pin to recents</string>
     <string name="tb_unpin_app">Unpin from recents</string>
@@ -342,7 +342,7 @@
 
     <string name="tb_pin_shortcut_not_supported">Your launcher doesn\'t support adding shortcuts from other apps.\n\nPlease manually add the shortcut from your launcher\'s \"Widgets\" menu.</string>
 
-    <string name="tb_action_activate">Activate</string>
+    <string name="tb_action_activate">Yes</string>
 
     <string name="tb_pref_secondscreen_title_open">Open SecondScreen</string>
     <string name="tb_pref_secondscreen_title_install">Install SecondScreen</string>
