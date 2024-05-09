@@ -398,16 +398,16 @@ public class StartMenuController extends UIController {
             case POSITION_BOTTOM_LEFT:
             case POSITION_BOTTOM_VERTICAL_LEFT:
             default:
-                return Gravity.BOTTOM | Gravity.LEFT;
+                return Gravity.BOTTOM | Gravity.CENTER;
             case POSITION_BOTTOM_RIGHT:
             case POSITION_BOTTOM_VERTICAL_RIGHT:
-                return Gravity.BOTTOM | Gravity.RIGHT;
+                return Gravity.BOTTOM | Gravity.CENTER;
             case POSITION_TOP_LEFT:
             case POSITION_TOP_VERTICAL_LEFT:
-                return Gravity.TOP | Gravity.LEFT;
+                return Gravity.TOP | Gravity.CENTER;
             case POSITION_TOP_RIGHT:
             case POSITION_TOP_VERTICAL_RIGHT:
-                return Gravity.TOP | Gravity.RIGHT;
+                return Gravity.TOP | Gravity.CENTER;
         }
     }
 
